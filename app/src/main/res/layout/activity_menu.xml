@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".controllers.MenuActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradient_menu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="311dp"
+            android:layout_height="110dp"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/logo_iresto" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="331dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/mnMeja"
+            android:layout_width="126dp"
+            android:layout_height="124dp"
+            app:srcCompat="@drawable/meja" />
+
+        <ImageView
+            android:id="@+id/mnMenu"
+            android:layout_width="126dp"
+            android:layout_height="124dp"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/menu" />
+
+        <ImageView
+            android:id="@+id/mnPesanan"
+            android:layout_width="129dp"
+            android:layout_height="124dp"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/pesanan" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:text="Meja"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Pesanan"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <ImageView
+            android:id="@+id/mnKasir"
+            android:layout_width="126dp"
+            android:layout_height="124dp"
+            app:layout_column="0"
+            app:layout_row="3"
+            app:srcCompat="@drawable/kasir" />
+
+        <ImageView
+            android:id="@+id/mnLaporan"
+            android:layout_width="126dp"
+            android:layout_height="124dp"
+            app:layout_column="1"
+            app:layout_row="3"
+            app:srcCompat="@drawable/laporan" />
+
+        <ImageView
+            android:id="@+id/mnKeluar"
+            android:layout_width="129dp"
+            android:layout_height="124dp"
+            app:layout_column="2"
+            app:layout_row="3"
+            app:srcCompat="@drawable/exit" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:text="Kasir"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Laporan"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Keluar"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            app:layout_column="2"
+            app:layout_row="4" />
+    </android.support.v7.widget.GridLayout>
+
+</RelativeLayout>

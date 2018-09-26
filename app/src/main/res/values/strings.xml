@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">App i Resto</string>
+    <string name="login_app">Login App : Masukkan ID. User dan Password</string>
+    <string name="btn_login">Log In</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_simpan">Simpan</string>
+
+    <!-- User -->
+    <string name="id_user">ID. User</string>
+    <string name="nama_user">Nama User</string>
+    <string name="level_user">Email</string>
+    <string name="password">Password</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
+
+    <string name="registrasi_user">Registrasi User Baru</string>
+
+    <!-- Meja -->
+    <string name="no_meja">No. Meja</string>
+    <string name="bentuk">Bentuk</string>
+
+    <!-- Menu -->
+    <string name="txt_kd_menu">KD. Menu</string>
+    <string name="txt_nama_menu">Nama Menu</string>
+    <string name="txt_deskripsi">Deskripsi</string>
+    <string name="txt_harga">Harga</string>
+
+</resources>
