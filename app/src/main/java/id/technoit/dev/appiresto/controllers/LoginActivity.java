@@ -46,10 +46,14 @@ public class LoginActivity extends AppCompatActivity {
     // deklarasi variabel alamat host
     public static String URL = "http://192.168.1.135/api_android/iresto/login.php";
 
+    SessionManager sessionManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        sessionManager = new SessionManager(this);
 
         // inisialisasi variabel objek
         validasiIDUser = findViewById(R.id.validasiIDUser);
@@ -104,6 +108,9 @@ public class LoginActivity extends AppCompatActivity {
                                     JSONObject jsonObject1 = jsonArray.getJSONObject(i);
 
                                     String nama_user = jsonObject1.getString("nama_user").trim();
+
+                                    sessionManager.createSession(id_user, nama_user);
+
                                     Toast.makeText(LoginActivity.this,
                                             "Login berhasil ! \n Nama : "+nama_user,
                                             Toast.LENGTH_SHORT)

@@ -25,10 +25,24 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="311dp"
-            android:layout_height="110dp"
-            android:layout_centerInParent="true"
+            android:layout_width="305dp"
+            android:layout_height="81dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
             app:srcCompat="@drawable/logo_iresto" />
+
+        <TextView
+            android:id="@+id/txtUser"
+            android:layout_width="292dp"
+            android:layout_height="33dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginBottom="15dp"
+            android:text="ID. User :     |  Nama User :     "
+            android:textColor="@color/colorWhite" />
     </RelativeLayout>
 
     <android.support.v7.widget.GridLayout
